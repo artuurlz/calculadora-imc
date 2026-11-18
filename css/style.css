@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --first-color: #f2e9d8;
+  --first-color-alt: #403022;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: var(--first-color-alt);
+}
+
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100dvh;
+  background-color: var(--first-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  width: 300px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--first-color-alt);
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.div_input {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-weight: 600;
+  width: 150px;
+  border: 2px solid var(--first-color-alt);
+}
+
+.calcular {
+  width: 100px;
+  height: 50px;
+  color: var(--first-color);
+  background-color: var(--first-color-alt);
+  border: 2px solid var(--first-color-alt);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.calcular:hover {
+  color: var(--first-color-alt);
+  background-color: var(--first-color);
+  transition: 0.5s ease-in-out;
+}
+
+.resultado {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
